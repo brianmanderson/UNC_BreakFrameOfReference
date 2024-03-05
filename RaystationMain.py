@@ -5,8 +5,8 @@
 
 #****************************
 # ***CHANGE NEXT TWO LINES***
-last_edit =  '05/11/2022'
-current_script = 'rs2mq_check'
+last_edit =  '03/05/2024'
+current_script = 'BreakFrameOfReference'
 #****************************
 #
 # Brian M Anderson, PhD
@@ -25,12 +25,13 @@ sep = UncScriptInitObj.get_sep()
 
 
 # location of misc files
-misc = baseDir + sep + 'misc'
+misc = baseDir + sep + 'BreakFrameOfReference'
 sys.path.append(misc)
 
 
 #****************************
 # ***CHANGE THESE LINES***
-import rs2mq_check
+import BreakFrameOfReference
+BreakFrameOfReference.main()
 print('...just ran {} version {} ...'.format(current_script,last_edit))
 #****************************
